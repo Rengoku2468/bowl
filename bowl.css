@@ -1,0 +1,142 @@
+body{
+    background-color: whitesmoke;
+}
+* {
+    margin: 0;
+}
+/* bowl header*/
+#image_header {
+    text-align: center;
+            text-align: center;
+            background-image: url('assets/cover.jpg');
+            background-size: 280%;
+            background-position: 30% 0%;
+            height: 17em;
+            color: black;
+            text-align: center;
+}
+.icons{
+    display: flex;
+}
+#bowl_image {
+    width: 100%;
+}
+p{
+    font-size: 0.9rem;
+}
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: thin;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*content*/
+
+.button_array{
+    margin-top: 1em;
+    display:flex;
+    justify-content: center;
+}
+  .button_array button{
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    width: fit-content ;
+    border-radius: 1em;
+    border: none;
+    height: 3em;
+    padding: 0.7em;
+    width: 30%;
+    background-color: white;
+    transition: all 0.5s ease;
+}
+
+.button_array button:hover{
+            letter-spacing: 3px;
+            background-color:grey;
+            color: hsl(0, 0%, 100%);
+            box-shadow: black;
+        }
+.button_array button:active {
+    letter-spacing: 3px;
+    background-color: grey;
+    color: hsl(0, 0%, 100%);
+    box-shadow:grey;
+    transform: translateY(10px);
+    transition: 100ms;
+}
+#location{
+    color: black;
+display: flex;
+justify-content: center;
+margin-top: 1.5em;
+}
+/*food*/
+.food{
+    display:flex ;
+    overflow: scroll;
+    justify-content: space-between;
+}
+a{
+        color: rgb(43, 42, 42);
+        text-decoration: none;
+        margin-right: 10%;
+}
+a:hover{
+    border: black;
+    border-radius: 0.8em;
+    padding-left: 0.7em;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    color: white;
+        padding-right: 0.7em;
+    background: black;
+}
+a:active{
+        border: black;
+            border-radius: 0.8em;
+            padding-left: 0.7em;
+            padding-top: 0.4em;
+            padding-bottom: 0.4em;
+            color: white;
+            padding-right: 0.7em;
+            background: black;
+                transform: translateY(10px);
+                    transition: 100ms;
+}
+/*bowls*/
+.bowls img{
+  border-radius: 0.4em;
+}
+.bowls{
+    font-weight: thin;
+    margin-left: 10%;
+    display: grid;
+    row-gap: 3em;
+        column-gap: 2em;
+    grid-template-columns: 40% 40%;
+    grid-template-rows:40% ;
+}
+
+#soup1 button{
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+        width: fit-content;
+        border-radius: 0.5em;
+        border: none;
+        height: 3em;
+        padding: 0.7em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        background-color: black;
+        color: white;
+        transition: all 0.5s ease;
+}
