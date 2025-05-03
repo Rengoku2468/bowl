@@ -7,58 +7,94 @@
     <link rel="stylesheet" href="bowl.css">
 </head>
 <body>
-    <div id="image_header">
-    <div class="icons">
-        <img src="assets/icons/bxs-circle-three-quarter.svg" style="width:1.2em; position: absolute; top: 0.7em; margin-left: 5%" alt="">
-        <select id="language_selector" style="border: none;  background:none;  position: absolute; top: 0.7em; left: 15%; font-size: 0.9em;">
-            <option value="en" selected>En</option>
-            <option value="es">Esp</option>
-            <option value="fr">Fr</option>
-            <option value="de">Deu</option>
-        </select>
-        <img src="assets/icons/bxs-user.svg" alt="Logo" id="logo_user"
-            style="position: absolute; left: 80%; top: 0.7em; width: 1.2em;">
-        <img src="assets/icons/bx-menu.svg" alt="Logo" id="logo_menu"
-            style="position: absolute; left: 90%; top: 0.7em; width: 1.2em;">
-    </div>
-       <div style="display: flex; flex-direction: column; align-items: center;">
-            <img src="assets/ChatGPT Image Apr 29, 2025, 09_02_56 PM.png" style="margin-top: 0.5em;" width="30%">
-        <h1 id="bowl_title">
-            Bowlicious
-            <p>
-                Explore the world of bowls,<br>
-                what are you waiting for?<br>
-            </p>
-        </h1>
-       </div>
-    </div>
     <div id="content" >
-          <div class="button_array">
-            <button>Delivery</button>
-            <button>Take-away</button>
-            <button>Dinein</button>
-        </div>
-        <div id="location">
-                        <input type="text" placeholder="Choose a delivery address." style="background-color: rgb(231, 229, 229); width: 87%;text-align: center;padding: 0.7em; border-radius: 1em; border: none;">
-        </div>
-        <div class="food" style="margin-top: 1em;">
-            <img src="assets/icons/bx-search.svg"  style="margin-right: 1em; margin-left: 2em;" alt="">
-            <a href="">Bowls</a>
-            <a href="">Salads</a>
-            <a href="">Soups</a>
-            <a href="">Pasta</a>
-            <a href="">Snacks</a>
-            <a href="">Desserts</a>
-        </div>
-                    <h2 style="    margin-left: 10%;      margin-top: 1em;">Bowls</h2><br>
-        <div class="bowls">
-            <div id="soup1" style="display: flex; text-align: left; flex-direction: column;"><img src="assets/coverbowl.jpg" width="100%"><p>Bowl of ramen <br>484g</p><br><button style="width: 100%;">+  $1000</button></div>
+            <div id="image_header">
+                <div class="icons">
+                    <img src="assets/icons/bxs-circle-three-quarter.svg"
+                        style="width:1.2em; position: absolute; top: 0.7em; margin-left: 5%" alt="">
+                    <select id="language_selector"
+                        style="border: none;  background:none;  position: absolute; top: 0.7em; left: 15%; font-size: 0.9em;">
+                        <option value="en" selected>En</option>
+                        <option value="es">Esp</option>
+                        <option value="fr">Fr</option>
+                        <option value="de">Deu</option>
+                    </select>
+                    <img src="assets/icons/bxs-user.svg" alt="Logo" id="logo_user"
+                        style="position: absolute; left: 80%; top: 0.7em; width: 1.2em;">
+                    <img src="assets/icons/bx-menu.svg" alt="Logo" id="logo_menu"
+                        style="position: absolute; left: 90%; top: 0.7em; width: 1.2em;">
+                </div>
+                <div style="display: flex; flex-direction: column; align-items: center; margin-top: 2em;">
+                    <img src="assets/ChatGPT Image Apr 29, 2025, 09_02_56 PM.png" id="main" style="margin-top: 0.5em;" width="30%">
+                    <h1 id="bowl_title">
+                        Bowlicious
+                        <h3>
+                            Explore the world of bowls,<br>
+                            what are you waiting for?<br>
+                        </h3>
+                    </h1>
+                </div>
+            </div>
+            <div class="flex">
+                <div id="flex1">
+
+              <input type="text" style="background: none;   margin-top: 1em; padding: 0.7em; border-radius: 1em; border: none;" placeholder="🔍  Product search">                    
+                    <a href="">Bowls</a>
+                    <a href="">Salads</a>
+                    <a href="">Soups</a>
+                    <a href="">Pasta</a>
+                    <a href="">Snacks</a>
+                    <a href="">Desserts</a>
+                </div>
+                <div id="flex2">
+                <div class="button_array">
+                    <button><h3>Delivery</h3></button>
+                    <button><h3>Take-away</h3></button>
+                    <button><h3>Dinein</h3></button>
+                </div>
+                <div id="location">
+                    <input type="text" placeholder="Choose a delivery address."
+                        style="background-color: rgb(231, 229, 229);height: 2em;   width:100%;padding: 0.7em; border-radius: 1em; border: none;">
+                </div>
+                <div class="food" style="margin-top: 1em;">
+                    <img src="assets/icons/bx-search.svg" style="margin-right: 1em; margin-left: 2em;" alt="">
+                    <a href="">Bowls</a>
+                    <a href="">Salads</a>
+                    <a href="">Soups</a>
+                    <a href="">Pasta</a>
+                    <a href="">Snacks</a>
+                    <a href="">Desserts</a>
+                </div>
+                <h2  id="titler" style="        margin-top: 1em;">Bowls</h2><br>
+                <div class="bowls">
+                    <div id="soup1" style="display: flex; text-align: left; flex-direction: column;"><img src="assets/coverbowl.jpg"
+                            width="100%">
+                        <p>Bowl of ramen <br>484g</p><br><button style="width: 100%;">+ $1000</button>
+                    </div>
+                    <div id="soup1" style="display: flex; text-align: left; flex-direction: column;"><img src="assets/coverbowl.jpg"
+                            width="100%">
+                        <p>Bowl of ramen <br>484g</p><br><button style="width: 100%;">+ $1000</button>
+                    </div>
+                        <div id="soup1" style="display: flex; text-align: left; flex-direction: column;"><img src="assets/coverbowl.jpg"
+                                width="100%">
+                            <p>Bowl of ramen <br>484g</p><br><button style="width: 100%;">+ $1000</button>
+                        </div>
                             <div id="soup1" style="display: flex; text-align: left; flex-direction: column;"><img src="assets/coverbowl.jpg"
                                     width="100%">
-                                <p>Bowl of ramen <br>484g</p><br><button style="width: 100%;">+  $1000</button>
+                                <p>Bowl of ramen <br>484g</p><br><button style="width: 100%;">+ $1000</button>
                             </div>
-
-        </div>
+                
+                </div>
+                </div>
+                <div id="flex3">
+                 <div id="checkout">
+                    <h2>
+                        Order details
+                    </h2>
+                                    <img src="assets/4776675.jpg" style="transform: translateY(5em);" width="100%" alt="">
+                 </div>
+                </div>
+            </div>
     </div>
     <script src="bowl.js" defer></script>
 </body>
